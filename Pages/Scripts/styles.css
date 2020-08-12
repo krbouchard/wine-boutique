@@ -17,7 +17,8 @@ body{
   
 }
 
-body.index{background-image:url(Images/red-background.png);
+body.index{
+  background-image:url(Images/red-background.png);
 }
 
 
