@@ -1,0 +1,305 @@
+*{
+  padding: 0;
+  padding-top:3px;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom:0px; 
+  
+}
+
+body.index{background-image:url(/Pages/Images/red-background.jpg);
+}
+
+
+nav{
+  background: #ffffff;
+  height: 90px;
+  top:0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+a{
+  color:black;
+}
+
+label.logo{
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0px 70px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+
+
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgb(0, 0, 0);
+
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+a.active,a:hover{
+  background: #ffffff;
+  color: #bd1f4e;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+
+
+
+  label.logo{
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background: #2d2931d8;
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: auto;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+  }
+  nav ul li a{
+    color:white;
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #ffffff;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+}
+
+section{
+  background: url() no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+main{
+
+height:15%;
+padding: 50px;
+margin-top: 20px;
+margin-left:0;
+margin-right:0;
+
+}
+
+main > a{
+  border-bottom: 1px dotted black;
+}
+
+
+main.wine-list{
+
+  height:15%;
+  padding: 15px;
+  margin-top: 80px;
+  
+  }
+
+main > h1{
+  color:white;
+  text-shadow: 0 0 3px rgb(0, 0, 0);
+  font-size: 58px;
+  width:1%;
+  float:right;
+  margin-right:10%;
+  padding-right:22px;
+
+}
+
+.bottle{
+  display:flex;
+  justify-content:center;
+padding-bottom:50px;
+}
+.bottle > p{
+  text-align:left;
+padding-left:15px;
+}
+
+
+div > h1{
+  text-align: center;
+
+}
+
+.wines{
+  display:flex;
+  justify-content:center;
+}
+
+.wines > a{
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: .01s;
+}
+
+.wines > a:hover{
+  background-color: rgba(231, 231, 231, 0.685);
+}
+
+div > p{
+  text-align:center;
+  font-size:15px;
+
+}
+.bottle > span {
+  padding-left: 25px;
+  padding-bottom:0px;
+font-size:15px;
+}
+
+.bottle > a{
+  padding-left: 30px;
+}
+
+.liyou {
+  background-color: rgba(45, 38, 46, 0.527);
+margin-left: 20px;
+}
+
+.liyou > p{
+  padding-left:30px;
+  padding-top: 13px;
+  padding-right:20px;
+  text-align:left;
+  color:white;
+}
+
+.vineyard-info{
+  float:right;
+  padding-bottom:20px;
+margin-right:5%;
+margin-left:5%;
+}
+
+.vineyard-info > p{
+text-align: left;
+width:90%;
+  padding-left:18%;
+
+}
+.vineyard-info > h3{
+  text-align: left;
+  width:90%;
+    padding-left:18%;
+  }
+
+.vineyardpicture{
+  padding-left:18%;
+  bottom:0;
+background-color: rgb(255, 255, 255);
+}
+
+.vineyard-name{ 
+  float:left;
+  background-color: rgb(255, 255, 255);
+  margin-right:0%;
+  width:3%;
+  text-shadow: 0 0 3px rgb(255, 255, 255);
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(74, 74, 74, 0.897);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  width: 150px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+span a{
+  font-size: 20px;
+  color:  #ffffff;
+  background-color: rgb(199, 78, 144);
+  padding-left:3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-radius: 10px;
+}
+
