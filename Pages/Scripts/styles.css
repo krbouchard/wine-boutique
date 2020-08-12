@@ -27,6 +27,26 @@ body{
     overflow-x: hidden;
     
 }
+.liyou {
+  width:90%;
+  margin-left:5%;
+}
+
+
+}
+
+@media (min-width: 858px){
+  
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+.liyou {
+  width:40%;
+  margin-left:30%;
+}
+
 
 }
 
@@ -47,6 +67,7 @@ margin-right:0;
 
 main > a{
   border-bottom: 1px dotted black;
+  color:black;
 }
 
 
@@ -116,7 +137,7 @@ font-size:15px;
 
 .liyou {
   background-color: rgba(45, 38, 46, 0.527);
-margin-left: 20px;
+
 }
 
 .liyou > p{
