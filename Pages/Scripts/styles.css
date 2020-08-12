@@ -96,6 +96,7 @@ a.active,a:hover{
 @media (max-width: 858px){
   .checkbtn{
     display: block;
+    cursor: pointer;
   }
   ul{
     position: fixed;
@@ -107,6 +108,7 @@ a.active,a:hover{
     text-align: center;
     transition: all .5s;
     z-index: auto;
+    cursor: pointer;
   }
   nav ul li{
     display: block;
