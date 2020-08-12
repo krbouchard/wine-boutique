@@ -79,7 +79,7 @@ main.wine-list{
   }
 
 main > h1{
-  color:white;
+  color:rgb(0, 0, 0);
   text-shadow: 0 0 3px rgb(0, 0, 0);
   font-size: 58px;
   width:1%;
@@ -180,43 +180,5 @@ background-color: rgb(255, 255, 255);
   width:3%;
   text-shadow: 0 0 3px rgb(255, 255, 255);
 
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgba(74, 74, 74, 0.897);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
-  width: 150px;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px; 
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-span a{
-  font-size: 20px;
-  color:  #ffffff;
-  background-color: rgb(199, 78, 144);
-  padding-left:3px;
-  padding-right: 3px;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  border-radius: 10px;
 }
 
